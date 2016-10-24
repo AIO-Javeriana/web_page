@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6 lt-ie10 lt-ie9 lt-ie8 lt-ie7 no-js" lang="en"><![endif]-->
+<!--[if IE 7]><html class="ie ie7 lt-ie10 lt-ie9 lt-ie8 no-js" id="ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lt-ie10 lt-ie9 no-js" id="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie lt-ie10 no-js" id="ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+	<title>AIO: The tutor robot</title>
+	
+	<meta name="description" content="" />
+	<meta name="keywords" content="AIO, BESA, Agents paradygm" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="/css/style.css" media="screen">
+	<link rel="stylesheet" href="/css/print.css" media="print">
+	<link rel="stylesheet" href="/css/AIO.css">
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<link rel="apple-touch-icon" href="">
+	<link rel="apple-touch-icon" sizes="72x72" href="">
+	<link rel="apple-touch-icon" sizes="114x114" href="">
+	<link rel="apple-touch-icon" sizes="144x144" href="">
+	
+	<style>
+		#content,
+		.not-visible { opacity: 0; }
+	</style>
+</head>
+
+<body>
+    <div class="page-wrap container main">
+        <header class="header main clearfix global">
+            <div class="container main">
+                <h1 class="logo-wrap">
+                	<a href="/" class="internal-link u-left logo">
+	                    <span class="text">AIO</span>
+	                </a>
+	            </h1>
+
+                <nav class="u-right">
+                    <h2 class="u-visually-hidden">Page navigation</h2>
+
+                    <ul class="reset">
+                        <li><a href="" class="internal-link nav-pricing">Descripción</a></li>
+                        
+                        <li><a href="" class="internal-link nav-features">Documentos</a></li>
+                
+                        <li><a href="" class="internal-link nav-contact">Equipo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+<svg version="1.1" id="svg-assets" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" width="80px" height="80px" viewBox="0 0 800 400" enable-background="new 0 0 800 400" xml:space="preserve">
+    <g id='full-opened-eyes'>
+      <path stroke="#000000" stroke-miterlimit="10" d="M379.442,192.656c0,103.342,0,103.342-71.472,103.342l0,0
+    		c-71.471,0-71.471,0-71.471-103.91l0,0c0-103.91,0-103.91,71.471-103.91l0,0C379.442,88.178,379.442,88.178,379.442,192.656
+    		L379.442,192.656z" />
+      <path stroke="#000000" stroke-miterlimit="10" d="M563.002,192.978c0,103.343,0,103.343-71.471,103.343l0,0
+    		c-71.472,0-71.472,0-71.472-103.91l0,0c0-103.91,0-103.91,71.472-103.91l0,0C563.002,88.5,563.002,88.5,563.002,192.978
+    		L563.002,192.978z" />
+    </g>
+    <g id='full-closed-eyes'>
+      <path stroke="#000000" stroke-miterlimit="10" d="M379.442,199.729c0,4.271,0,4.271-71.472,4.271l0,0
+    	c-71.471,0-71.471,0-71.471-4.295l0,0c0-4.295,0-4.295,71.471-4.295l0,0C379.442,195.41,379.442,195.41,379.442,199.729
+    	L379.442,199.729z" />
+      <path stroke="#000000" stroke-miterlimit="10" d="M563.442,199.729c0,4.271,0,4.271-71.472,4.271l0,0
+    	c-71.471,0-71.471,0-71.471-4.295l0,0c0-4.295,0-4.295,71.471-4.295l0,0C563.442,195.41,563.442,195.41,563.442,199.729
+    	L563.442,199.729z" />
+    </g>
+    <g id='full-looking-right'>
+      <path stroke="#000000" stroke-miterlimit="10" d="M202.429,184.694c-3.072,104.255-3.072,104.255-74.602,88.788l0,0
+    			c-77.21-18.899-74.601,0-74.601-89.277l0,0c0-102.317,0-105.324,74.601-89.276l0,0C198.313,113.678,202.429,94.93,202.429,184.694
+    			L202.429,184.694z" />
+      <path stroke="#000000" stroke-miterlimit="10" d="M364.216,216.483c-3.071,104.255-3.071,104.255-74.602,88.789l0,0
+    		c-77.21-18.9-74.601,0-74.601-89.277l0,0c0-102.317,0-105.324,74.601-89.276l0,0C360.101,145.468,364.216,126.719,364.216,216.483
+    		L364.216,216.483z" />
+    </g>
+</svg>
+<div id="ajax">
+	<main id="content" data-page="page-home">
+		<div class="panel hero" style="height:3200px">
+			<div class="panel-inner">
+				<!-- / START / Inline header for the panel to crop -->
+				<div class="header main clearfix">
+					<div class="container main">
+						<div class="logo-wrap">
+							<a href="/" class="internal-link u-left logo">
+								<span class="text">AIO</span>
+							</a>
+						</div>
+
+					<nav class="u-right">
+                        <h2 class="u-visually-hidden">Page navigation</h2>
+
+                        <ul class="reset">
+                            <li><a href="/pricing" class="internal-link nav-pricing">Descripción</a></li>
+                            
+                            <li><a href="/features" class="internal-link nav-features">Documentos</a></li>
+                    
+                            <li><a href="/contact" class="internal-link nav-contact">Equipo</a></li>
+                        </ul>
+                    </nav>
+				</div>
+			</div>
+			<!-- / FINISH / Inline header for the panel to crop -->
+
+	<section class="overlay" id="timeline-0">
+	    
+    </section>
+    <div class="hero-spacer">
+	    <div class="hero-platform js-reset">
+    		<div class="platform">
+    			<div class="person person-1" data-slug="person-1"></div>
+    			<div class="person person-2" data-slug="person-2"></div>
+    			<div class="person person-3" data-slug="person-3"></div>
+    			<div class="person person-4" data-slug="person-4"></div>
+    			<div class="person person-5" data-slug="person-5"></div>
+    			<div class="person person-6" data-slug="person-6"></div>
+    			<div class="person person-7" data-slug="person-7"></div>
+    			<div class="person person-8" data-slug="person-8"></div>
+    			<div class="person person-9" data-slug="person-9"></div>
+    		</div><!-- .platform -->
+	    </div><!-- .hero-platform -->
+    </div><!-- .hero-spacer -->				
+				<div class="monitor-spacer">
+					<section id="timeline-1" class="monitor">
+						<div class="v-align">
+							<div id="timeline-2" class="container not-visible content-region static-panel left">
+	<div class="set-piece white set-analytics static-image-1">
+		<div class="organised-posts">
+			
+			<span class="post post-6 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-7 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-8 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-9 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-10 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-11 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-18 graph-box"><span class="bg" style=""></span></span>
+			<span class="post post-19 graph-box"><span class="bg" style=""></span></span>
+			<span class="post post-20 graph-box"><span class="bg" style=""></span></span>	
+			<span class="post post-1"><span class="bg" style=""></span></span>
+			<span class="post post-2"><span class="bg" style=""></span></span>
+			<span class="post post-3"><span class="bg" style=""></span></span>
+			<span class="post post-4"><span class="bg" style=""></span></span>
+			<span class="post post-5"><span class="bg" style=""></span></span>
+			<span class="post post-12"><span class="bg" style=""></span></span>
+			<span class="post post-13"><span class="bg" style=""></span></span>
+			<span class="post post-14"><span class="bg" style=""></span></span>
+			<span class="post post-15"><span class="bg" style=""></span></span>
+			<span class="post post-16"><span class="bg" style=""></span></span>
+			<span class="post post-17"><span class="bg" style=""></span></span>
+
+			<span class="post post-21"><span class="bg" style=""></span></span>
+			<span class="post post-22"><span class="bg" style=""></span></span>
+			<span class="post post-23"><span class="bg" style=""></span></span>
+			<span class="post post-24"><span class="bg" style=""></span></span>
+			
+		</div><!-- .organised-posts -->
+	</div><!-- .static-image -->
+	<h2 class="title">Aggregate social content</h2>
+	<div class="text">
+		<p>Add any @account or #hashtag from Twitter or Instagram to instantly build a custom feed. Monitor your brand and audience, follow #hashtags or keep an eye on the competition.</p>
+	</div><!-- .text -->
+	
+</div>							<div class="set-piece-wrapper">
+	<div class="set-piece white">
+		
+		<div class="collated-posts">
+			<span class="post post-1"></span>
+			<span class="post post-2"></span>
+			<span class="post post-3"></span>
+			<span class="post post-4"></span>
+			<span class="post post-5"></span>
+			<span class="post post-6"></span>
+			<span class="post post-7"></span>
+			<span class="post post-8"></span>
+			<span class="post post-9"></span>
+			<span class="post post-10"></span>
+			<span class="post post-11"></span>
+			<span class="post post-12"></span>
+			<span class="post post-13"></span>
+			<span class="post post-14"></span>
+			<span class="post post-15"></span>
+			<span class="post post-16"></span>
+			<span class="post post-17"></span>
+			<span class="post post-18"></span>
+			<span class="post post-19"></span>
+			<span class="post post-20"></span>
+			<span class="post post-21"></span>
+			<span class="post post-22"></span>
+			<span class="post post-23"></span>
+			<span class="post post-24"></span>
+			
+		</div><!-- .collating-posts-wrap -->
+		
+	</div><!-- .set-piece -->
+</div><!-- .set-piece-wrapper -->						</div>
+
+						<div class="posts-wrap">
+							<div class="falling-posts-wrap">
+	<div class="falling-posts left">
+		<span class="post post-1 parallax-3"></span>
+		<span class="post post-2 parallax-1"></span>
+	</div>
+	<div class="falling-posts right">
+		<span class="post post-1 parallax-2"></span>
+		<span class="post post-2 parallax-1"></span>
+	</div>
+	
+	<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><path class="line" fill="none" stroke="#FFF" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="8.02" d="M302.6 97.8c.5 25.3-10.6 113.1-152.3 293"/></svg>
+	<svg id="line-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="500" height="500" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+		<path class="line" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="8.0159" d="M365.6 0c0 0-54.9 215.1-365.6 349"/>
+	</svg>
+	<svg id="line-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="500" height="500" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+		<path class="line" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="8.0159" d="M74.7 61.6c0 0 47.1 281 352 377.7"/>
+	</svg>
+	<svg id="line-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="500" height="500" viewBox="0 0 500 500" enable-background="new 0 0 500 500">
+		<path class="line" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="8.0159" d="M98.1 103.8c0 0 22.6 293 303.9 261.6"/>
+	</svg>
+</div><!-- .falling-posts -->							<div class="staggered-posts-wrap">
+	<div class="staggered-posts left">
+		<div class="parallax-1">
+			<span class="post post-1"></span>
+			<span class="post post-3"></span>
+			<span class="post post-6"></span>
+			<span class="post post-9"></span>
+			<span class="post post-11"></span>
+			<span class="post post-13"></span>
+			<span class="post post-15"></span>
+			<span class="post post-16"></span>
+			<span class="post post-20"></span>
+			<span class="post post-23"></span>
+			<span class="post post-24"></span>
+		</div><!-- .parallax-1 -->
+		<div class="parallax-2">
+			<span class="post post-2"></span>
+			<span class="post post-4"></span>
+			<span class="post post-5"></span>
+			<span class="post post-10"></span>
+			<span class="post post-12"></span>
+			<span class="post post-17"></span>
+			<span class="post post-21"></span>
+			<span class="post post-35"></span>
+		</div><!-- .parallax-2 -->
+		<div class="parallax-3">
+			<span class="post post-7"></span>
+			<span class="post post-8"></span>
+			<span class="post post-14"></span>
+			<span class="post post-22"></span>
+			<span class="post post-36"></span>
+		</div><!-- .parallax-3 -->
+	</div>
+	<div class="staggered-posts right">
+		<div class="parallax-1">
+			<span class="post post-1"></span>
+			<span class="post post-3"></span>
+			<span class="post post-6"></span>
+			<span class="post post-9"></span>
+			<span class="post post-11"></span>
+			<span class="post post-13"></span>
+			<span class="post post-15"></span>
+			<span class="post post-16"></span>
+			<span class="post post-20"></span>
+			<span class="post post-23"></span>
+			<span class="post post-24"></span>
+		</div><!-- .parallax-1 -->
+		<div class="parallax-2">
+			<span class="post post-2"></span>
+			<span class="post post-4"></span>
+			<span class="post post-5"></span>
+			<span class="post post-10"></span>
+			<span class="post post-12"></span>
+			<span class="post post-17"></span>
+			<span class="post post-21"></span>
+			<span class="post post-35"></span>
+		</div><!-- .parallax-2 -->
+		<div class="parallax-3">
+			<span class="post post-7"></span>
+			<span class="post post-8"></span>
+			<span class="post post-14"></span>
+			<span class="post post-22"></span>
+			<span class="post post-36"></span>
+		</div><!-- .parallax-3 -->
+	</div>
+</div><!-- .staggered-posts-wrap -->						</div>
+					</section>
+					
+					<!-- Trigger for the vertical aligned sticky panel -->
+					<span id="trigger-valign"></span>
+				</div>
+			</div>
+		</div>
+		
+		<!-- / START / Analytics spacer and trigger -->
+		<span id="trigger-analytics"></span>
+		<div class="scene-spacer" style="height:2000px"></div>
+		<!-- / FINISH / Analytics spacer and trigger -->
+		
+		<div class="panel-floating">
+			<!-- panel that sits behind content to sticky in sync with the initial fixed panel -->
+			<!-- / START / Inversed - Inline header for the panel to crop -->
+			<div class="header main clearfix inv">
+				<div class="container main">
+					<div class="logo-wrap">
+						<a href="/" class="internal-link u-left logo">
+							<span class="text">Waaffle</span>
+						</a>
+					</div>
+
+					<nav class="u-right">
+    <h2 class="u-visually-hidden">Page navigation</h2>
+
+    <ul class="reset">
+        <li><a href="/pricing" class="internal-link nav-pricing">Pricing</a></li>
+        
+        <li><a href="/features" class="internal-link nav-features">Features</a></li>
+
+        <li><a href="/contact" class="internal-link nav-contact">Contact</a></li>
+        
+        <li><a href="/blog/" class="nav-blog">Blog</a></li>
+
+        <li><a href="https://app.waaffle.com/login" class="nav-login">Login</a></li>
+
+        <li><a href="https://app.waaffle.com/register" class="nav-signup btn">Sign up</a></li>
+    </ul>
+</nav>
+
+<a href="https://app.waaffle.com/login" class="btn naked mob-login">Login</a>
+<a href="https://app.waaffle.com/register" class="btn naked mob-signup">Sign up</a>					
+				</div>
+			</div>
+			<!-- / FINISH / Inversed - Inline header for the panel to crop -->
+			
+			<div class="v-align">
+				<section class="analyse">
+					<div id="timeline-5" class="container text-center not-visible content-region static-panel right">
+						<!-- Static content - to be displayed when the scroll magic timeline is disabled -->
+						<div class="set-piece orange set-analytics static-image-2">
+	<div class="organised-posts">
+		<span class="post post-6 graph-dot"></span>
+		<span class="post post-7 graph-dot"></span>
+		<span class="post post-8 graph-dot"></span>
+		<span class="post post-9 graph-dot"></span>
+		<span class="post post-10 graph-dot"></span>
+		<span class="post post-11 graph-dot"></span>
+		<span class="post post-18 graph-box"></span>
+		<span class="post post-19 graph-box"></span>
+		<span class="post post-20 graph-box"></span>
+		
+		<span class="graph-box-line line-1"></span>
+		<span class="graph-box-line line-2"></span>
+		<span class="graph-box-line line-3"></span>
+		
+		<div class="graph">
+			
+			<span class="bar-horz"></span>
+			<span class="bar-vert"></span>
+			
+			<span class="notch notch-1"></span>
+			<span class="notch notch-2"></span>
+			<span class="notch notch-3"></span>
+			<span class="notch notch-4"></span>
+			<span class="notch notch-5"></span>
+			<span class="notch notch-6"></span>
+			<span class="notch notch-7"></span>
+			<span class="notch notch-8"></span>
+			
+			<span class="bar bar-1"></span>
+			<span class="bar bar-2"></span>
+			<span class="bar bar-3"></span>
+			<span class="bar bar-4"></span>
+			<span class="bar bar-5"></span>
+			<span class="bar bar-6"></span>
+			
+		</div><!-- .graph -->
+		<svg class="graph-line graph-line-white" xmlns="http://www.w3.org/2000/svg" width="253.6" height="53.6" viewBox="0 0 253.6 53.6"><path clip-rule="evenodd" fill="none" stroke="#fff" stroke-width="10" stroke-miterlimit="10" d="M.8 52.3l50-31 51 21 50-32 51 21 50-30" class="line"/></svg>
+		<svg class="graph-line graph-line-grey" xmlns="http://www.w3.org/2000/svg" width="253.6" height="53.6" viewBox="0 0 253.6 53.6"><path clip-rule="evenodd" fill="none" stroke="#D5D5D5" stroke-width="3" stroke-miterlimit="10" d="M.8 52.3l50-31 51 21 50-32 51 21 50-30" class="line"/></svg>
+	</div><!-- .organised-posts -->
+</div><!-- .static-image -->						<h2 class="title">Analyse social performance and engagement</h2>
+<div class="text">
+	<p>Make smarter decisions with insights across your social channels and campaigns. Our built-in analytics provide key metrics for measuring content performance and audience engagement.</p>
+</div><!-- .text -->					</div>
+				</section>
+				
+				<!-- / START / This is the main set piece which starts as the analytics and transforms to publish -->
+				<div class="set-piece-wrapper">
+					<div class="set-piece orange set-analytics proper">
+	<div class="organised-posts">
+								
+		<div class="used">
+			<span class="post post-6 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-7 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-8 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-9 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-10 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-11 graph-dot"><span class="bg" style=""></span></span>
+			<span class="post post-18 graph-box"><span class="bg" style=""></span></span>
+			<span class="post post-19 graph-box"><span class="bg" style=""></span></span>
+			<span class="post post-20 graph-box"><span class="bg" style=""></span></span>	
+			
+			<span class="graph-box-line line-1"></span>
+			<span class="graph-box-line line-2"></span>
+			<span class="graph-box-line line-3"></span>
+			
+		</div><!-- used -->
+		<div class="unused">
+			<span class="post post-1"><span class="bg" style=""></span></span>
+			<span class="post post-2"><span class="bg" style=""></span></span>
+			<span class="post post-3"><span class="bg" style=""></span></span>
+			<span class="post post-4"><span class="bg" style=""></span></span>
+			<span class="post post-5"><span class="bg" style=""></span></span>
+			<span class="post post-12"><span class="bg" style=""></span></span>
+			<span class="post post-13"><span class="bg" style=""></span></span>
+			<span class="post post-14"><span class="bg" style=""></span></span>
+			<span class="post post-15"><span class="bg" style=""></span></span>
+			<span class="post post-16"><span class="bg" style=""></span></span>
+			<span class="post post-17"><span class="bg" style=""></span></span>
+	
+			<span class="post post-21"><span class="bg" style=""></span></span>
+			<span class="post post-22"><span class="bg" style=""></span></span>
+			<span class="post post-23"><span class="bg" style=""></span></span>
+			<span class="post post-24"><span class="bg" style=""></span></span>
+		</div><!-- .fadeout -->
+		
+		<div class="graph">
+			
+			<span class="bar-horz"></span>
+			<span class="bar-vert"></span>
+			
+			<span class="notch notch-1"></span>
+			<span class="notch notch-2"></span>
+			<span class="notch notch-3"></span>
+			<span class="notch notch-4"></span>
+			<span class="notch notch-5"></span>
+			<span class="notch notch-6"></span>
+			<span class="notch notch-7"></span>
+			<span class="notch notch-8"></span>
+			
+			<span class="bar bar-1"></span>
+			<span class="bar bar-2"></span>
+			<span class="bar bar-3"></span>
+			<span class="bar bar-4"></span>
+			<span class="bar bar-5"></span>
+			<span class="bar bar-6"></span>
+			
+		</div><!-- .graph -->
+		<svg xmlns="http://www.w3.org/2000/svg" width="253.6" height="53.6" viewBox="0 0 253.6 53.6" class="graph-line graph-line-white"><path clip-rule="evenodd" fill="none" stroke="#fff" stroke-width="10" stroke-miterlimit="10" d="M.8 52.3l50-31 51 21 50-32 51 21 50-30" class="line"/></svg>
+		<svg xmlns="http://www.w3.org/2000/svg" width="253.6" height="53.6" viewBox="0 0 253.6 53.6" class="graph-line graph-line-grey"><path clip-rule="evenodd" fill="none" stroke="#D5D5D5" stroke-width="3" stroke-miterlimit="10" d="M.8 52.3l50-31 51 21 50-32 51 21 50-30" class="line"/></svg>
+		
+	</div><!-- .organised-posts -->
+</div><!-- .set-piece / Analytics set piece -->					<div class="exploding-stats">
+						
+	<span class="stat stat-1 icon">
+		<span class="stat-jumbo">
+			<span class="count-up"
+				data-number="531" 
+				data-format="%NUMBER%" 
+				data-decimal="0"
+			>0</span>
+		</span>
+		Total Posts
+	</span>
+	
+	<span class="stat stat-2">
+		<span class="icon happy"></span>
+		Engagement
+	</span>
+	
+	<span class="stat stat-3 icon">
+		<span class="stat-jumbo">
+			<span class="count-up"
+				data-number="836"
+				data-format="%NUMBER%" 
+				data-decimal="0"
+			>0</span>
+		</span>
+		Likes
+	</span>
+	
+	<span class="stat stat-4">
+		<span class="icon photo"></span>
+		Top Posts
+	</span>
+	
+	<span class="stat stat-5">
+		<span class="icon people"></span>
+		Ambassadors
+	</span>
+	
+	<span class="stat stat-6">
+		<span class="icon hashtag-2"></span>
+		Popular #
+	</span>
+	
+</div><!-- .exploding-stats -->					
+					<!-- The publish screen base - this gets rotated and in position from analytics to publish -->
+					<div class="set-piece orange set-publish"></div><!-- .set-piece / Monitor for computer -->
+					<div class="set-piece-screen stagger proper">
+							
+	<div class="browser stagger">
+		<div class="browser-controls stagger">
+			<div class="dots clearfix">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div><!-- .dots -->
+			<div class="boxes clearfix">
+				<span class="box"></span>
+				<span class="box"></span>
+				<span class="box"></span>
+				<span class="box long"></span>
+			</div><!-- .boxes -->
+		</div>
+		<div class="posts">
+			<div class="grid clearfix">
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				<div class="col">
+					<span class="post"></span>
+				</div>
+				
+			</div><!-- .grid -->
+		</div><!-- .posts -->
+	</div>
+	
+	<span class="icon icon-1 stagger"></span>
+	<span class="icon icon-2 stagger"></span>
+	<span class="icon icon-3 stagger"></span>
+	<span class="icon icon-4 stagger"></span>
+	
+</div><!-- .set-piece-screen -->				</div>
+				<!-- / END / This is the main set piece which starts as the analytics and transforms to publish -->
+				
+				<section class="publish static-panel left">
+					<div class="static-image-3">
+						
+	<div class="set-piece orange set-publish"></div>
+	<div class="set-piece-screen stagger">
+	
+		<div class="browser stagger">
+			<div class="browser-controls stagger">
+				<div class="dots clearfix">
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div><!-- .dots -->
+				<div class="boxes clearfix">
+					<span class="box"></span>
+					<span class="box"></span>
+					<span class="box"></span>
+					<span class="box long"></span>
+				</div><!-- .boxes -->
+			</div>
+			<div class="posts">
+				<div class="grid clearfix">
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					<div class="col">
+						<span class="post"></span>
+					</div>
+					
+				</div><!-- .grid -->
+			</div><!-- .posts -->
+		</div>
+		
+	</div>
+	
+</div><!-- .static-image -->					<div class="container text-center content-region">
+	<div id="timeline-6" class="not-visible">
+		<h2 class="title">Publish your own custom feeds 
+			<small>For use on any website, campaign or live event</small></h2>
+	</div>
+	<div id="timeline-7" class="text not-visible">
+		<p>Share your content as a public board, a website widget (coming soon) or a fully customised feed through our API. Set content to publish automatically or choose what gets shown.</p>
+		<ul class="list">
+			<li class="title"><strong>Perfect for:</strong></li>
+			<li>Aggregated social campaigns</li>
+			<li>Competitions</li>
+			<li>Live events</li>
+			<li>Website social feeds</li>
+			<li>Custom social presence</li>
+			<li>Shoppable social content</li>
+			<!-- <li>&amp; more...</li> -->
+		</ul>
+		<!--<a href="#" class="btn">See examples</a>-->
+	</div><!-- .text -->
+</div><!-- .container -->					
+					<!-- Office - Inculudes desk, fred, floot and cat -->
+					<div class="desk">
+	<span class="cord"></span>
+	
+	<span class="bench bench-1"></span>
+	<span class="bench bench-2"></span>
+	
+	<span class="leg leg-2"></span>
+	<span class="leg leg-3"></span>
+	<span class="leg leg-1"></span>
+	<span class="leg leg-4"></span>
+</div><!-- .desk -->
+
+<div class="floor"></div><!-- .floor -->
+
+<span class="fred">
+	<span class="hand left"></span>
+	<span class="hand right"></span>
+</span>
+
+<img src="img/cat.gif" srcset="img/cat@2x.gif 2x" class="cat" alt="" />				</section>
+			</div>
+		</div>
+		
+		<!-- / START / Publish spacer and trigger -->
+		<span id="trigger-publish"></span>
+		<div class="scene-spacer" style="height:3688px"></div>
+		<!-- / FINISH / Publish spacer and trigger -->
+		
+		<div class="demographics">
+	<h2 class="u-visually-hidden">Waaffle is...</h2>
+
+	<div class="col3 clearfix">
+		
+		<div class="col">
+			<h3 class="title">For Marketers</h3>
+			<img src="" srcset="" alt="" class="icon-img" />
+			<ul class="reset clearfix">
+				<li><strong>Follow engagement across multiple platforms</strong>
+					and track the success of your campaigns</li>
+				<li><strong>Watch audience activity in real time</strong>
+					with breakdowns for key metrics</li>
+				<li><strong>Create custom social campaigns</strong>
+					through our suite of publishing tools and APIs</li>
+			</ul>
+			<a href="https://app.waaffle.com/register" class="btn purple">Sign Up</a>
+		</div>
+		
+		<div class="col">
+			<h3 class="title">For Businesses</h3>
+			<img src="" srcset="" alt="" class="icon-img" />
+			<ul class="reset clearfix">
+				<li><strong>See who's talking about you</strong>
+					and better understand your audience</li>
+				<li><strong>Monitor your competitors</strong>
+					with insights on their audience engagement</li>
+				<li><strong>Publish your own curated social feeds</strong>
+					straight to your website, campaigns or competitions</li>
+			</ul>
+			<a href="https://app.waaffle.com/register" class="btn purple">Sign Up</a>
+		</div>
+		<div class="col">
+			<h3 class="title">For Agencies</h3>
+			<img src="" srcset="" alt="" class="icon-img" />
+			<ul class="reset clearfix">
+				<li><strong>Create custom campaigns for clients</strong>
+					from any combination of @accounts or #hashtags</li>
+				<li><strong>Measure performance</strong>
+					of clients' social campaigns and content</li>
+				<li><strong>Investigate trends</strong>
+					relevant to each brand and audience</li>
+			</ul>
+			<a href="https://app.waaffle.com/register" class="btn purple">Sign Up</a>
+		</div>
+		
+		
+	</div><!-- .col3 -->
+	
+	<span class="divider-line-1"></span>
+	<span class="divider-line-2"></span>
+</div><!-- .demographics -->
+		
+		<div class="did-you-know">
+
+			<span class="sub-title">Did you know?</span>
+			<p class="title">You can publish your own aggregated feeds for use in <strong>public displays</strong>, <strong>blogs</strong>, <strong>live events</strong>, and <strong>announcements!</strong></p>
+		</div>
+		
+		<div class="page-footer">
+				<footer class="main-footer clearfix">
+		<img src="" srcset="" class="buttersworth" alt="" />
+
+		<a href="https://app.waaffle.com/register" class="btn jumbo">Start your free trial</a>
+			
+		<nav class="footer-nav">
+			<h2 class="u-visually-hidden">Footer navigation</h2>
+			<ul class="main">
+				<li><a href="/" class="internal-link">Home</a>
+
+				<li><a href="/pricing" class="internal-link">Pricing</a></li>
+
+				<li><a href="/contact" class="internal-link">Contact</a></li>
+
+				<li><a href="/support" class="internal-link">Support</a></li>
+
+			</ul>
+			<ul class="reset social">
+				<li><a href="https://twitter.com/waaffleapp" target="_blank" class="twitter icon"><span class="u-visually-hidden">Twitter</span></a></li>
+				<li><a href="https://www.instagram.com/waaffleapp/" target="_blank" class="instagram icon"><span class="u-visually-hidden">Instagram</span></a></li>
+			</ul>
+
+			<ul class="sub clearfix">
+				<li class="u-left">
+					<p class="credits">&copy; Waaffle 2016</p>
+					<a href="/privacy-terms" class="internal-link">Privacy &amp; Terms</a>
+				</li>
+				
+				<li class="u-right humaan"><a href="http://humaan.com" target="_blank" title="Websites, Mobile, eCommerce – Digital experiences for humans">Made by Humaans</a></li>
+			</ul>
+		</nav>
+	</footer>
+		</div>
+	</main>
+	
+	<nav class="internal-nav">
+		<h2 class="u-visually-hidden">Popup Internal Navigation</h2>
+		<ul class="reset clearfix">
+			<li>
+				<a href="#" class="js-link-aggregate">Aggregate</a>
+			</li>
+			<li>
+				<a href="#" class="js-link-analyse">Analyse</a>
+			</li>
+			<li>
+				<a href="#" class="js-link-publish">Publish</a>
+			</li>
+		</ul>
+	</nav>
+	
+</div>	<!-- Script Libraries and Resources -->
+    <script src="/js/jquery-1.12.0.min.js"></script>
+
+	<!-- Scroll magic -->
+	<script src="/js/lib/ScrollMagic.min.js"></script>
+	<script src="/js/lib/ScrollMagic.ScrollToPlugin.min.js"></script>
+	<script src="/js/lib/TweenMax.min.js"></script>
+	<script src="/js/lib/animation.gsap.min.js"></script>
+	<script src="/js/lib/ScrollMagic.addIndicators.min.js"></script>
+
+	<!-- Additional library files -->
+	<script src="/js/lib/jquery.device.min.js"></script>
+	<script src="/js/lib/jquery.easing.1.3.min.js"></script>	
+	<script src="/js/lib/jquery.validate.min.js"></script>
+	<script src="/js/lib/jquery.waypoints.min.js"></script>
+	<script src="/js/lib/jquery.tigerUppercut.min.js"></script>
+	<script src="/js/lib/jquery.slick.min.js"></script>
+	
+	<!--[if lt IE 10]>
+		<script src="/js/lib/jquery.placeholder.min.js"></script>
+	<![endif]-->
+		
+	<!-- Humaan: Nucleus -->
+	<script type="text/javascript" src="/js/min/Preloader-ugl.js"></script>
+	<script type="text/javascript" src="/js/min/Nucleus-ugl.js"></script>
+	<script type="text/javascript" src="/js/min/functions-ugl.js"></script>
+	
+	<!-- AIO js -->
+	<script type="text/javascript" src="/js/AIO/external/svg-morpheus.v0.3.2.min.js"></script>
+	<script type="text/javascript" src="/js/AIO/utils.js"></script>
+	<script type="text/javascript" src="/js/AIO/faces.js"></script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+g:not(:first-child){
+    display: none;
+}
+
+@media (max-width: 800px) {
+    #svg-assets{
+        position: fixed;
+        top:-2px;
+        left: 0px;
+        z-index: 10000;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    #svg-assets{
+        position: fixed;
+        top:-2px;
+        left:20px;
+        z-index: 10000;
+    }
+}
+
+@media (min-width: 1000px) {
+    #svg-assets{
+        position: fixed;
+        top:8px;
+        left:25px;
+        z-index: 10000;
+    }
+}

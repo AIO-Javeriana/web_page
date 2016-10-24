@@ -1,0 +1,1 @@
+$(function(){Nucleus.init({debug:!0})});

@@ -1,0 +1,21 @@
+@media (max-width: 1000px) {
+  #svg-assets{
+    display: none;
+  }
+}
+#svg-assets{
+  background: none;
+  fill:#064474;
+}
+
+.objetivo_general{
+  text-align: center;
+}
+
+.card{
+  text-align: center;
+}
+
+.light{
+  text-align: justify;
+}

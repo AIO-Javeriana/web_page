@@ -19,3 +19,15 @@
 .light{
   text-align: justify;
 }
+
+#logo_javeriana{
+  height: 200px;
+}
+
+footer a{
+  color: white;
+}
+
+footer i{
+  margin-right: 5px;
+}

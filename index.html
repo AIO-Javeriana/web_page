@@ -11,6 +11,7 @@
     <link href="min/custom-min.css" type="text/css" rel="stylesheet">
     <link href="css/index.css" type="text/css" rel="stylesheet" >
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/aos.css" />
     
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -78,16 +79,7 @@
 
 <!--Hero-->
 <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-        <h1 class="text_h center header cd-headline letters type">
-            <span>I Love</span> 
-            <span class="cd-words-wrapper waiting">
-                <b class="is-visible">creating</b>
-                <b>designing</b>
-                <b>developing</b>
-            </span>
-        </h1>
-    </div>
+    
 </div>
 
 <!--Intro and service-->
@@ -95,35 +87,35 @@
     <div class="container">
         <div class="row">
             <div  class="col s12">
-                <h2 class="center header text_h2"> ¿Cómo debe ser la <span class="span_h2"> arquitectura lógica y física </span> de una plataforma robótica enfocada a la <span class="span_h2"> dramatización </span>?</h2>
+                <h2 id="pregunta_generadora" class="center header text_h2"></h2> 
             </div>
 
-            <div class="col s12">
+            <div id="objetivo_general" class="col s12 ">
                 <h5 class="promo-caption objetivo_general"><i class="mdi-action-stars Medium"></i>Desarrollar una plataforma robótica modular orientada a la dramatización</h5>
             </div>
             
-            <div  class="col s12 m3 l3">
+            <div  id="objetivo_especifico_1"class="col s12 m3 l3 ">
                 <div class="center promo promo-example">
                     <i class="mdi-editor-border-color"></i>
                     <h5 class="promo-caption">Arquitectura</h5>
                     <p class="light">Diseñar una arquitectura física y lógica del sistema basada en el modelo BDI con un esquema modular, versátil y escalable enfocada a dramatización</p>
                 </div>
             </div>
-            <div class="col s12 m3 l3">
+            <div id="objetivo_especifico_2" class="col s12 m3 l3 ">
                 <div class="center promo promo-example">
                     <i class="mdi-action-extension"></i>
                     <h5 class="promo-caption">Módulos</h5>
                     <p class="light">Desarrollar (Diseñar, implementar y verificar) un módulo de manipulación, de recolección de datos y reproducción audiovisual, de desplazamiento y de procesamiento con características de flexibilidad y escalabilidad</p>
                 </div>
             </div>
-            <div class="col s12 m3 l3">
+            <div id="objetivo_especifico_3" class="col s12 m3 l3 ">
                 <div class="center promo promo-example">
                     <i class="mdi-content-content-paste"></i>
                     <h5 class="promo-caption">Pruebas</h5>
                     <p class="light">Diseñar y ejecutar pruebas de integración entre módulos</p>
                 </div>
             </div>
-            <div class="col s12 m3 l3">
+            <div id="objetivo_especifico_4" class="col s12 m3 l3 ">
                 <div class="center promo promo-example">
                     <i class="mdi-navigation-check"></i>
                     <h5 class="promo-caption">Validación</h5>
@@ -139,7 +131,7 @@
     <div class="container">
         <h2 class="header text_b">Entregables </h2>
         <div class="row">
-            <div class="col s12 m4 l4">
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400"class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="img/adobe.png">    
@@ -155,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400"class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="img/word.png">
@@ -171,7 +163,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400"class="col s12 m4 l4">
                 <div class="card">
                     <div style="background:#F26651" class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="img/code.ico">
@@ -200,7 +192,7 @@
     <div class="container">
         <h2 class="header text_b"> Nuestro Equipo </h2>
         <div class="row">
-            <div class="col s12 m4">
+            <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400" class="col s12 m4">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
                         <img class="activator" src="img/avatar3.png">
@@ -225,7 +217,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4">
+            <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400" class="col s12 m4">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
                         <img class="activator" src="img/avatar3.png">
@@ -251,7 +243,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4">
+            <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400" class="col s12 m4">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
                         <img class="activator" src="img/avatar3.png">
@@ -277,7 +269,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6">
+            <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400" class="col s12 m6">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
                         <img class="activator" src="img/avatar2.png">
@@ -302,7 +294,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6">
+            <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400" class="col s12 m6">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
                         <img class="activator" src="img/avatar1.png">
@@ -342,10 +334,11 @@
 	<script type="text/javascript" src="/js/AIO/external/svg-morpheus.v0.3.2.min.js"></script>
 	<script type="text/javascript" src="/js/AIO/utils.js"></script>
 	<script type="text/javascript" src="/js/AIO/faces.js"></script>
-	<script type="text/javascript" src="/js/AIO/index.js"></script>
 	<script type="text/javascript" src="/js/template/plugin.js"></script>
 	<script type="text/javascript" src="/js/template/custom.js"></script>
-    
-    </body>
+	<script type="text/javascript" src="js/AIO/external/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+	<script type="text/javascript" src="/js/AIO/index.js"></script>
+</body>
     
 </html>

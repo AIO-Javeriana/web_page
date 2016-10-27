@@ -31,3 +31,17 @@ footer a{
 footer i{
   margin-right: 5px;
 }
+
+
+#pregunta_generadora{
+  animation: type 4s steps(60, end); 
+}
+
+#pregunta_generadora:nth-child(2){
+  color:red;
+  animation: type2 8s steps(60, end);
+}
+
+.hidden{
+  display: none;
+}

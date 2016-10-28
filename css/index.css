@@ -45,3 +45,11 @@ footer i{
 .hidden{
   display: none;
 }
+
+.pictures div{
+  text-align: center;
+}
+
+.slick-slide img {
+  display:initial !important;
+}

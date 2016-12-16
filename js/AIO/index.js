@@ -1,6 +1,16 @@
 
 var typed = false;
 $( document ).ready(function() {
+  
+    setTimeout(function(){
+      $("#first_hero").fadeIn();  
+      setTimeout(function(){
+        $("#second_hero").fadeIn();  
+        setTimeout(function(){
+          $("#third_hero").fadeIn();  
+        },1000);
+      },1500);
+    }, 1500);
     var visualModule = new VisualModule();
     visualModule.init(visualModule);
     AOS.init();

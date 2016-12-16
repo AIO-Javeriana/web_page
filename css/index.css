@@ -52,4 +52,23 @@ footer i{
 
 .slick-slide img {
   display:initial !important;
+  filter: grayscale(100%);
+}
+
+.slick-slide img:hover {
+  filter:none;
+}
+
+.hero_text{
+  margin-left: 10%;
+  margin-right: 10%;
+  display:none;
+}
+
+#first_hero{
+  margin-top: 100px;
+}
+
+.card_AIO{
+  height: 500px;
 }

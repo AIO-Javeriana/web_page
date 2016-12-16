@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#2196F3">
+    <link rel="shortcut icon" href="./img/icon.png">
     <title>AIO</title>
 
     <!-- CSS  -->
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    
+
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -24,12 +25,13 @@
 <!-- Pre Loader -->
 <div id="loader-wrapper">
     <div id="loader"></div>
- 
+
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
- 
+
 </div>
 
+<a style="z-index:1000;position:absolute; right:20px; top:10px" href="https://github.com/AIO-Javeriana" target="_blank"><img style="width:40px" src="./img/github.jpg"></a>
 <!--Navigation-->
  <div class="navbar-fixed">
     <nav id="nav_f" class="default_color" role="navigation">
@@ -61,8 +63,14 @@
                     		c-77.21-18.9-74.601,0-74.601-89.277l0,0c0-102.317,0-105.324,74.601-89.276l0,0C360.101,145.468,364.216,126.719,364.216,216.483
                     		L364.216,216.483z" />
                     </g>
-                </svg> 
-                <a href="#" id="logo-container" class="brand-logo">AIO</a>
+                </svg>
+                <div id="logo-container" class="brand-logo " >
+                  <a  href="#" ><b>AIO</b></a>
+                  <br>
+                  <a class="hide-on-med-and-down"style="position: relative; font-size: 1rem; font-weight: bold; top:-50px;">Investigación</a>
+
+                </div>
+
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#intro">Descripción</a></li>
                     <li><a href="#work">Entregables</a></li>
@@ -75,7 +83,8 @@
                     <li><a href="#team">Equipo</a></li>
                     <li><a href="#gallery">Galeria</a></li>
                 </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                  <i class="mdi-navigation-menu" style="position: relative;left:20px;"></i></a>
             </div>
         </div>
     </nav>
@@ -83,7 +92,10 @@
 
 <!--Hero-->
 <div class="section no-pad-bot" id="index-banner">
-    
+  <br><br><br>
+    <h2 id="first_hero" class="hero_text text_h2" style="color:white; text-align:center"> Se preguntaran, ¿cuál es la <strong>problematica</strong>?</h2>
+    <h2 id="second_hero" class="hero_text text_h2" style="color:white; text-align:center"> Robots siendo utilizados para enseñar electronica y matemáticas, es bueno...</h2>
+    <h2 id="third_hero" class="hero_text text_h2" style="color:white; text-align:center"> Pero... robots enseñando biología y etica. eso si es <span><strong>Cool!!</strong></span> </h2>
 </div>
 
 <!--Intro and service-->
@@ -91,13 +103,13 @@
     <div class="container">
         <div class="row">
             <div  class="col s12">
-                <h2 id="pregunta_generadora" class="center header text_h2"></h2> 
+                <h2 id="pregunta_generadora" class="center header text_h2"></h2>
             </div>
 
             <div id="objetivo_general" class="col s12 ">
                 <h5 class="promo-caption objetivo_general"><i class="mdi-action-stars Medium"></i>Desarrollar una plataforma robótica modular orientada a la dramatización</h5>
             </div>
-            
+
             <div  id="objetivo_especifico_1"class="col s12 m3 l3 ">
                 <div class="center promo promo-example">
                     <i class="mdi-editor-border-color"></i>
@@ -138,16 +150,18 @@
             <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400"class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/adobe.png">    
+                        <img class="activator" src="img/adobe.png">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Archivos PDF <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Descargar todo</a></p>
+                        <p><a href="./files/pdf.zip">Descargar todo</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Archivos PDF<i class="mdi-navigation-close right"></i></span>
-                        <p><a href="#">Propuesta</a></p>
-                        <p><a href="#">Memoria</a></p>
+                        <p><a target="_blank" href="./files/propuesta.pdf">Propuesta</a></p>
+                        <p><a target="_blank" href="./files/memoria.pdf">Memoria</a></p>
+                        <p><a target="_blank" href="./files/Anexos.zip">Anexos</a></p>
+                        <p><a target="_blank" href="./files/presentacion.pdf">Presentación Sustentación</a></p>
                     </div>
                 </div>
             </div>
@@ -158,27 +172,57 @@
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Archivos Word <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Descargar todo</a></p>
+                        <p><a target="_blank" href="./word.zip">Descargar todo</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Archivos Word<i class="mdi-navigation-close right"></i></span>
-                        <p><a href="#">Propuesta</a></p>
-                        <p><a href="#">Memoria</a></p>
+                        <span target="_blank" class="card-title grey-text text-darken-4">Archivos Word<i class="mdi-navigation-close right"></i></span>
+                        <p><a target="_blank" href="./files/propuesta.docx">Propuesta</a></p>
+                        <p><a target="_blank" href="./files/Memoria_AIO.docx">Memoria</a></p>
+            				   <p><a target="_blank" href="./files/Anexos.zip">Anexos</a></p>
                     </div>
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400"class="col s12 m4 l4">
                 <div class="card">
                     <div style="background:#F26651" class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/code.ico">
+                        <img style="background:#2BA3D4" class="activator" src="img/imagen.svg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Codigo Fuente<i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Descargar todo</a></p>
+                        <span class="card-title activator grey-text text-darken-4">Poster<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a target="_blank" href="./files/poster.png">Descargar</a></p>
                     </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400"class="col s12 m4 l4">
+                <div class="card">
+                    <div style="background:#F26651" class="card-image waves-effect waves-block waves-light">
+                        <img style="background:#d04424" class="activator" src="img/power-point.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Archivos Power Point<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a target="_blank" href="./files/presentacion.pptx">Descargar</a></p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400"class="col s12 m4 l4">
+                <div class="card">
+                    <div style="background:#F26651" class="card-image waves-effect waves-block waves-light">
+                        <img style="background:#59b999;" class="activator" src="img/code.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Codigo<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a target="_blank" href="https://github.com/AIO-Javeriana">Descargar</a></p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400"class="col s12 m4 l4">
+                <div class="card">
+                    <div style="background:#F26651" class="card-image waves-effect waves-block waves-light">
+                        <img style="background:#d52528" class="activator" src="img/youtube.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Videos<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a target="_blank" href="https://www.youtube.com/channel/UCAqG3m1eBsdtXZGr_610Lbg">Ver</a></p>
                     </div>
                 </div>
             </div>
@@ -187,9 +231,18 @@
 </div>
 
 <!--Parallax-->
-<div class="parallax-container">
-    <div class="parallax"><img src="img/parallax.png"></div>
-</div>
+  <div class="video-container">
+    <div class="youtube-video"
+         id="demo-1"
+         data-video-id="SKOqd9skei4"
+         width="560"
+         height="250"></div>
+    </div>
+
+      <!--
+        <iframe width="560"  src="http://www.youtube.com/embed/SKOqd9skei4?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+      -->
+   </div>
 
 <!--Team-->
 <div class="section scrollspy" id="team">
@@ -205,17 +258,14 @@
                         <span class="card-title activator grey-text text-darken-4">Stiven Avila <br/>
                             <small><em><a class="red-text text-darken-1" href="#">Estudiante</a></em></small></span>
                         <p>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.facebook.com/sAvilaG">
-                                <i class="fa fa-facebook-square"></i>
+                            <a class="blue-text text-lighten-2" target="_blank" href="https://github.com/Lespoir">
+                                <i class="fa fa-github-square"></i>
                             </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://twitter.com/im_joash">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://plus.google.com/u/0/+JoashPereira">
-                                <i class="fa fa-google-plus-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.linkedin.com/in/joashp">
+                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.linkedin.com/in/stiven-avila-ab5a09106">
                                 <i class="fa fa-linkedin-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.facebook.com/stivenavilag">
+                                <i class="fa fa-facebook-square"></i>
                             </a>
                         </p>
                     </div>
@@ -224,24 +274,21 @@
             <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400" class="col s12 m4">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/avatar3.png">
+                        <img class="activator" src="img/photos/miguel.jpg">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Miguel Bermeo<br/>
                             <small><em><a class="red-text text-darken-1" href="#">Estudiante</a></em></small>
                         </span>
                         <p>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.facebook.com/joash.c.pereira">
-                                <i class="fa fa-facebook-square"></i>
+                            <a class="blue-text text-lighten-2" target="_blank" href="https://github.com/bermeom">
+                              <i class="fa fa-github-square"></i>
                             </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://twitter.com/im_joash">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://plus.google.com/u/0/+JoashPereira">
-                                <i class="fa fa-google-plus-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.linkedin.com/in/joashp">
+                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.linkedin.com/in/angel-bermeo-225321105">
                                 <i class="fa fa-linkedin-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.facebook.com/angel.bermeo">
+                                <i class="fa fa-facebook-square"></i>
                             </a>
                         </p>
                     </div>
@@ -250,24 +297,21 @@
             <div data-aos="zoom-in-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400" class="col s12 m4">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/avatar3.png">
+                        <img class="activator" src="img/photos/fabian.jpg">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">
                             Fabian Merchán <br/>
                             <small><em><a class="red-text text-darken-1" href="#">Estudiante</a></em></small></span>
                         <p>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.facebook.com/joash.c.pereira">
-                                <i class="fa fa-facebook-square"></i>
+                            <a class="blue-text text-lighten-2" target="_blank" href="https://github.com/fabka">
+                                <i class="fa fa-github-square"></i>
                             </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://twitter.com/im_joash">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://plus.google.com/u/0/+JoashPereira">
-                                <i class="fa fa-google-plus-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.linkedin.com/in/joashp">
+                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.linkedin.com/in/merchanf">
                                 <i class="fa fa-linkedin-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.facebook.com/Merchanfle">
+                                <i class="fa fa-facebook-square"></i>
                             </a>
                         </p>
                     </div>
@@ -281,20 +325,7 @@
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Alejandra González<br/>
                             <small><em><a class="red-text text-darken-1" href="#">Directora Electrónica</a></em></small></span>
-                        <p>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.facebook.com/joash.c.pereira">
-                                <i class="fa fa-facebook-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://twitter.com/im_joash">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://plus.google.com/u/0/+JoashPereira">
-                                <i class="fa fa-google-plus-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.linkedin.com/in/joashp">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                        </p>
+
                     </div>
                 </div>
             </div>
@@ -306,20 +337,7 @@
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Enrique González<br/>
                             <small><em><a class="red-text text-darken-1" href="#">Director Sistemas</a></em></small></span>
-                        <p>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.facebook.com/joash.c.pereira">
-                                <i class="fa fa-facebook-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://twitter.com/im_joash">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://plus.google.com/u/0/+JoashPereira">
-                                <i class="fa fa-google-plus-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" target="_blank" href="https://www.linkedin.com/in/joashp">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                        </p>
+
                     </div>
                 </div>
             </div>
@@ -327,35 +345,26 @@
     </div>
 </div>
 
-<!-- Gallery -->
-<div id="gallery" class="section scrollspy">
-    <div class="container" >
-        <h2 class="header text_b"> Galería </h2>
-        <div class="pictures">
-          <div><img src="img/avatar1.png"></div>
-          <div><img src="img/avatar4.png"></div>
-          <div><img src="img/avatar3.png"></div>
-        </div>
-    </div>
-</div>
-
 <!--Footer-->
 <footer id="contact" class="page-footer default_color scrollspy">
-    
+
 </footer>
 
 
-    
+
     <!-- AIO js -->
-	<script type="text/javascript" src="/js/AIO/external/svg-morpheus.v0.3.2.min.js"></script>
-	<script type="text/javascript" src="/js/AIO/utils.js"></script>
-	<script type="text/javascript" src="/js/AIO/faces.js"></script>
-	<script type="text/javascript" src="/js/template/plugin.js"></script>
-	<script type="text/javascript" src="/js/template/custom.js"></script>
-	<script type="text/javascript" src="js/AIO/external/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-	<script type="text/javascript" src="/js/AIO/index.js"></script>
+	<script type="text/javascript" src="./js/AIO/external/svg-morpheus.v0.3.2.min.js"></script>
+	<script type="text/javascript" src="./js/AIO/utils.js"></script>
+	<script type="text/javascript" src="./js/AIO/faces.js"></script>
+	<script type="text/javascript" src="./js/template/plugin.js"></script>
+	<script type="text/javascript" src="./js/template/custom.js"></script>
+  <script type="text/javascript" src="./js/AIO/external/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
+	<script type="text/javascript" src="./js/AIO/index.js"></script>
+  <script type="text/javascript" src="./js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.youtube-inview-autoplay.js"></script>
+  <script type="text/javascript" src="./js/config_autoload_youtube.js"></script>
 </body>
-    
+
 </html>

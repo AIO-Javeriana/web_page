@@ -24,7 +24,7 @@ $( document ).ready(function() {
                  autoStart: false,
                  cursor:false,
             })
-            .tiType('¿Cómo debe ser la <span class="span_h2"> arquitectura lógica y física </span> de una plataforma robótica enfocada a la <span class="span_h2"> dramatización </span>?');
+            .tiType('¿Cómo debe ser la <span class="span_h2"> arquitectura lógica y física </span> de una plataforma robótica enfocada a la <span class="span_h2"> dramatización</span>?');
         }    
     });
     
